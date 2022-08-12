@@ -4,6 +4,8 @@ const btnModal = document.querySelector(".btn__modal");
 const modalShow = document.querySelector(".modal__background")
 const modalHide = document.querySelector(".modal__window__X")
 const modalHide2 = document.querySelector(".btn__danger")
+const modalWindow = document.querySelector("body > div > div")
+const modalBackground = document.querySelector("body > div")
 
 btnModal.addEventListener('click', function () {
     modalShow.classList.add('modal__background--active');
@@ -16,7 +18,6 @@ modalHide.addEventListener('click', function() {
 modalHide2.addEventListener('click', function() {
     modalShow.classList.remove('modal__background--active');
 })
-
 
 /*const btnModal = document.querySelector(".btn__modal");
 const modalShow = document.querySelector(".modal__background")
@@ -32,4 +33,4 @@ modalHide.addEventListener('click', function() {
 
 
 
-//Ami még hiányzik: ha kikattintok akkor még nem tűnik el, illetve, illetve tabra nem vált elemet.
+//Ami még hiányzik: ha kikattintok akkor még nem tűnik el.
